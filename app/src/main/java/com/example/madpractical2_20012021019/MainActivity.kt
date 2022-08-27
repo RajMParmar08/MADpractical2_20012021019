@@ -47,4 +47,10 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "onStop function called:", Toast.LENGTH_SHORT).show()
         Snackbar.make(mycl,"onStop function called:",Snackbar.LENGTH_LONG).show()
     }
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(TAG, "onDestroy function called:")
+        Toast.makeText(this, "onDestroy function called:", Toast.LENGTH_SHORT).show()
+        Snackbar.make(mycl,"onDestroy function called:",Snackbar.LENGTH_LONG).show()
+    }
 }
